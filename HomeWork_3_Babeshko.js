@@ -15,7 +15,7 @@
 */
 
 var years = prompt("Введіть ваш вік: ");
-if (years >= 0){
+if (typeof +years == 'number' && years >= 0){
     let temp = years%100;
     if (temp < 20){
         if (temp === 1) {
