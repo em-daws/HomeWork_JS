@@ -20,19 +20,19 @@
 
 var measurement = prompt("Введіть одиницю вимірювання (кілометри, години або кілограми):");
 var quantity = Number(prompt("Введіть кількість:"));
-var res;
+var result;
 switch (measurement) {
     case 'кілометри':
-        res = quantity * 1000;
-        console.log(quantity + " км це " + res + " м.");
+        result = quantity * 1000;
+        console.log(quantity + " км це " + result + " м.");
         break;
     case 'години':
-        res = quantity * 60;
-        console.log(quantity + " г це " + res + " хв.");
+        result = quantity * 60;
+        console.log(quantity + " г це " + result + " хв.");
         break;
     case 'кілограми':
-        res = quantity * 1000;
-        console.log(quantity + " кг це " + res + " грм.");
+        result = quantity * 1000;
+        console.log(quantity + " кг це " + result + " грм.");
         break;
     default:
         console.log(`Нажаль, не вдалось перевести значення до "${measurement}". Одиниці вимірювання можуть бути тільки: кілометри, години або кілограми. Спробуйте заново:)`);
