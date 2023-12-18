@@ -15,27 +15,23 @@
 */
 
 var years = prompt("Введіть ваш вік: ");
-if (typeof +years == 'number' && years >= 0){
-    let temp = years%100;
-    if (temp < 20){
+if (typeof +years == 'number' && years >= 0) {
+    let temp = years % 100;
+    if (temp < 20) {
         if (temp === 1) {
-            console.log (years + " рік");
-        }
-        else if (temp >= 2 && temp <= 4){
-        console.log (years + " роки");
-        }
-        else if (temp >= 5 || temp == 0){
-        console.log (years + " років");
+            console.log(years + " рік");
+        } else if (temp >= 2 && temp <= 4) {
+            console.log(years + " роки");
+        } else if (temp >= 5 || temp == 0) {
+            console.log(years + " років");
         }
     } else {
-        if (temp%10 === 1) {
-            console.log (years + " рік");
-        }
-        else if (temp%10 >= 2 && temp%10 <= 4){
-        console.log (years + " роки");
-        }
-        else if (temp%10 >= 5 || temp%10 == 0){
-        console.log (years + " років");
+        if (temp % 10 === 1) {
+            console.log(years + " рік");
+        } else if (temp % 10 >= 2 && temp % 10 <= 4) {
+            console.log(years + " роки");
+        } else if (temp % 10 >= 5 || temp % 10 == 0) {
+            console.log(years + " років");
         }
     }
 }
