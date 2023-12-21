@@ -20,7 +20,7 @@ drawTriangle(5, *);
 */
 
 function drawTriangle(height, symbol) {
-    for (let row = 1; row < height + 1; row++) { //1  4
+    for (let row = 1; row < height + 1; row++) {
       let rowContent = "";
       for (let i = 0; i < row; i++) {
         rowContent += symbol;
