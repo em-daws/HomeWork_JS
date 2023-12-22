@@ -19,7 +19,8 @@ drawTriangle(5, *);
 •	Вислати вашу гілку
 */
 
-function drawTriangle(height, symbol) {
+//for :
+function drawTriangleFor(height, symbol) {
     for (let row = 1; row < height + 1; row++) {
       let rowContent = "";
       for (let i = 0; i < row; i++) {
@@ -28,5 +29,20 @@ function drawTriangle(height, symbol) {
       console.log(rowContent);
     }
   }
-drawTriangle(5, '*');
-  
+drawTriangleFor(5, '+');
+
+//while:
+function drawTriangleWhile(height, symbol) {
+  let row = 1;
+  while (row < height + 1) { 
+    let rowContent = "";
+    let i = 0;
+    while (i < row) {
+      rowContent += symbol;
+      i++;
+    }
+    console.log(rowContent);
+    row++;
+  }
+}
+drawTriangleWhile(8, '*');
