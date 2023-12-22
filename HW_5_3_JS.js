@@ -11,11 +11,11 @@
 •	Вислати вашу гілку
 */
 
-function pow(x, y){
+function pow(x, y) {
     var result = x;
-    for (var i = 1; i < y; i++){
+    for (let i = 1; i < y; i++) {
         result *= x;
     }
     console.log(result);
 }
-pow (5, 2);
+pow(5, 2);
