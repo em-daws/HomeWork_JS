@@ -12,8 +12,8 @@
 
 var result = 0;
 var numbers = 100;
-for (var i = 1; i <= numbers; i++){
-    if (i % 3 != 0){
+for (let i = 1; i <= numbers; i++) {
+    if (i % 3 != 0) {
         result += i;
     }
 }
